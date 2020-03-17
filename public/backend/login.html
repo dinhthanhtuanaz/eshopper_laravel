@@ -1,0 +1,80 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị Website - TiTi</title>
+  <link href="./libs/fonts/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tuan-style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="login-wrapper">
+
+        <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="" id="login">
+                    <form action="http://localhost:8080/titiv1/admin/dang-nhap" method="POST">
+                        <input type="hidden" id="_token" name="_token" value="rH4LOgdgSI9yVKU9TEEBJ5QNRKpY2R36om8SoO3r">
+                        <div class="form-group">
+                          <label for="login_username">Tên đăng nhập</label>
+                          <input type="text" class="form-control" id="login_username" aria-describedby="emailHelp" name="login_username" value="">
+                        </div>
+                        <div class="form-group">
+                          <label for="login_password">Mật khẩu</label>
+                          <input type="password" class="form-control" id="login_password" name="login_password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="login_remember_password">
+                          <label class="form-check-label" for="login_remember_password">Nhớ mật khẩu</label>
+                          <a href="" class="float-right">Quên mật khẩu</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Đăng nhập</button>
+
+                      </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<script src="./libs/jquery/jquery-2.2.4.js"></script>
+<script src="./libs/jquery/popper.min.js"></script>
+<script src="./libs/bootstrap/bootstrap.min.js"></script>
+
+
+<script src="./libs/counter/waypoint.js"></script>
+<script src="./libs/counter/jquery.counterup.min.js"></script>
+
+<script src="./libs/piechart-mater/rpie.js"></script>
+
+<script src="./script.js"></script>
+<script>
+    //back pre page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<script>
+    var obj2 = {
+    values: [
+        12,10,2,2,    ],
+    colors: ['#4CAF50', '#00BCD4', '#E91E63', '#FFC107', '#8e44ad',
+            '#f39c12', '#34495e', '#2D7D9A', '#8764B8', '#D13438',
+            '#FF8C00', '#008a00', '#76608a', '#ff0084', '#007ee5'],
+    animation: true,
+    animationSpeed: 0,
+    fillTextData: true,
+    fillTextColor: '#fff',
+    fillTextAlign: 1.50,
+    fillTextPosition: 'inner',
+    doughnutHoleSize: null,
+    doughnutHoleColor: '#000',
+    offset: 1
+};
+    generatePieGraph('myCanvas2', obj2);
+</script>
+</body></html>

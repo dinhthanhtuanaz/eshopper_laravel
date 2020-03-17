@@ -1,0 +1,268 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị Website - TiTi</title>
+  <link href="./libs/fonts/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tuan-style.css">
+</head>
+<body><div id="wrapper">
+      <header class="header" id="header">
+    <div class="header-brand"><img src="./images/logo-haui-size.png" alt="logo">
+      <h1>Quản Trị Hệ Thống
+      </h1>
+    </div>
+    <div class="dropdown header-account">
+      <div class="header-account-name" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+        <h6><i class="fas fa-user"></i><span>
+            admin        </span><i class="fas fa-caret-down"></i></h6>
+      </div>
+      <div class="dropdown-menu header-account-control" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 50px, 0px);">
+          <a class="dropdown-item" href="#">
+              <i class="fas fa-user-cog"></i><span>Cập nhật</span></a>
+          <a class="dropdown-item" href="http://localhost:8080/titiv1/admin/dang-xuat">
+                <i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a></div>
+    </div>
+  </header>
+  <!-- end HEADER-->
+  <main class="main" id="main">
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <div class="sidebar-header">
+          <div class="sidebar-avt"><img src="./images/avt.jpg" alt="avatar"></div>
+        <h6>Xin chào admin</h6>
+        </div>
+        <ul class="sidebar-tree list-inline">
+                                    <li class="treeview"><a href="http://localhost:8080/titiv1/admin/thong-ke">
+                            <i class="fas fa-chart-line"></i><span>Thống kê dữ liệu</span></a>
+                      </li>
+                              <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-folder-open"></i><span>Danh mục</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline" style="display: none;">
+              <li><a href="http://localhost:8080/titiv1/admin/danh-muc">Danh sách</a></li>
+              <li><a href="http://localhost:8080/titiv1/admin/danh-muc/them">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-database"></i><span>Sản phẩm</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline" style="">
+              <li><a href="http://localhost:8080/titiv1/admin/san-pham">Danh sách</a></li>
+              <li><a href="http://localhost:8080/titiv1/admin/san-pham/them">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href="http://localhost:8080/titiv1/admin/don-hang"><i class="fas fa-cart-arrow-down"></i><span>Đơn hàng</span></a>
+          </li><li class="treeview"><a href="http://localhost:8080/titiv1/admin/khach-hang"><i class="fas fa-users"></i><span>Khách hàng</span></a>
+          </li>
+
+                              <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-user-lock"></i><span>Nhân viên</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+                        <ul class="treeview-menu list-inline" style="">
+                          <li><a href="http://localhost:8080/titiv1/admin/nhan-vien">Danh sách</a></li>
+                          <li><a href="http://localhost:8080/titiv1/admin/nhan-vien/them">Thêm</a></li>
+                        </ul>
+                      </li>
+                
+
+
+
+        </ul>
+      </nav>
+    </aside>
+    <!-- end SIDEBAR-->
+    <section class="block-center" id="block-center">
+      <div class="inner-center" id="inner-center">
+            
+<div id="wrap-content" style="background-color: #eee">
+    <h2 class="text-center mb-3">Thống kê nhanh</h2>
+
+    <div class="count-wrapper">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="count-item">
+                    <div class="w-25 count-item-icon" style="background-color:#00C0EF">
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                    <div class="w-75 count-item-text">
+                        <h6>TỔNG SỐ ĐƠN HÀNG</h6>
+                    <strong class="counter">22</strong> <a href="http://localhost:8080/titiv1/admin/don-hang">(Chi tiết)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="count-item">
+                    <div class="w-25 count-item-icon" style="background-color:#DD4A38">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="w-75 count-item-text">
+                        <h6>KHÁCH HÀNG</h6>
+                        <strong class="counter">14</strong> <a href="http://localhost:8080/titiv1/admin/khach-hang">(Chi tiết)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="count-item">
+                    <div class="w-25 count-item-icon" style="background-color:#01A65A">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="w-75 count-item-text">
+                        <h6>SẢN PHẨM</h6>
+                        <strong class="counter">21</strong> <a href="http://localhost:8080/titiv1/admin/san-pham">(Chi tiết)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="count-item">
+                    <div class="w-25 count-item-icon" style="background-color:#F29A12">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div class="w-75 count-item-text">
+                        <h6>DANH MỤC</h6>
+                        <strong class="counter">13</strong> <a href="http://localhost:8080/titiv1/admin/danh-muc">(Chi tiết)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-wrapper">
+        <div class="row">
+            <div class="col-7">
+                
+                <h5>Biểu đồ tỉ lệ doanh số sản phẩm</h5>
+                <div class="d-flex" style="background: #fff; padding: 15px;">
+                    <canvas id="myCanvas2" width="300" height="300"></canvas>
+                    <div style="padding-left:20px;">
+                                                            <div class="d-flex" style="align-items: baseline;">
+                                        <span style="display:inline-block; width:50px; height:10px;
+                                                        margin-right:5px;
+                                    background-color:#4CAF50"></span>
+                                        <span>Nhà sách (12)</span>
+                                    </div>
+                                                                    <div class="d-flex" style="align-items: baseline;">
+                                        <span style="display:inline-block; width:50px; height:10px;
+                                                        margin-right:5px;
+                                    background-color:#00BCD4"></span>
+                                        <span>Đồ công nghệ (10)</span>
+                                    </div>
+                                                                    <div class="d-flex" style="align-items: baseline;">
+                                        <span style="display:inline-block; width:50px; height:10px;
+                                                        margin-right:5px;
+                                    background-color:#E91E63"></span>
+                                        <span>Điện gia dụng (2)</span>
+                                    </div>
+                                                                    <div class="d-flex" style="align-items: baseline;">
+                                        <span style="display:inline-block; width:50px; height:10px;
+                                                        margin-right:5px;
+                                    background-color:#FFC107"></span>
+                                        <span>Xe cộ (2)</span>
+                                    </div>
+                                
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <h5>Sản phẩm được mua nhiều nhất</h5>
+                <table class="table">
+                    <thead class="thead">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col" style="width: 70px;">Hình</th>
+                        <th scope="col" style="width: 95px;">Số lượng</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                            <th scope="row">1</th>
+                            <td>1</td>
+                            <td>Truyện tranh Mắt Biếc</td>
+                            <td>
+                                <img src="./images/sp-truyen-mat-biec.jpg" alt="" style="width:50px; height:50px;">
+                            </td>
+                            <td>7</td>
+                            </tr>
+                                                    <tr>
+                            <th scope="row">2</th>
+                            <td>5</td>
+                            <td>Samsung Galaxy A51</td>
+                            <td>
+                                <img src="./images/ss-a51-xanh-1.png" alt="" style="width:50px; height:50px;">
+                            </td>
+                            <td>6</td>
+                            </tr>
+                                                    <tr>
+                            <th scope="row">3</th>
+                            <td>3</td>
+                            <td>Cô gái trong trang sách</td>
+                            <td>
+                                <img src="./images/sp-co-gai-trong-trang-sach.jpg" alt="" style="width:50px; height:50px;">
+                            </td>
+                            <td>4</td>
+                            </tr>
+                                                    <tr>
+                            <th scope="row">4</th>
+                            <td>2</td>
+                            <td>Xe máy Honda Winner</td>
+                            <td>
+                                <img src="./images/avt-xe-co.png" alt="" style="width:50px; height:50px;">
+                            </td>
+                            <td>2</td>
+                            </tr>
+                                                    <tr>
+                            <th scope="row">5</th>
+                            <td>7</td>
+                            <td>Laptop Apple Macbook Air 2019 i5 1.6GHz/8GB/128GB (MVFM2SA/A)
+</td>
+                            <td>
+                                <img src="./images/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-13-32-600x600.jpg" alt="" style="width:50px; height:50px;">
+                            </td>
+                            <td>2</td>
+                            </tr>
+                                            </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </section>
+    <!-- end CONTENT-->
+  </main>
+  <footer></footer>
+</div>
+<script src="./libs/jquery/jquery-2.2.4.js"></script>
+<script src="./libs/jquery/popper.min.js"></script>
+<script src="./libs/bootstrap/bootstrap.min.js"></script>
+
+
+<script src="./libs/counter/waypoint.js"></script>
+<script src="./libs/counter/jquery.counterup.min.js"></script>
+
+<script src="./libs/piechart-mater/rpie.js"></script>
+
+<script src="./script.js"></script>
+<script>
+    //back pre page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<script>
+    var obj2 = {
+    values: [
+        12,10,2,2,    ],
+    colors: ['#4CAF50', '#00BCD4', '#E91E63', '#FFC107', '#8e44ad',
+            '#f39c12', '#34495e', '#2D7D9A', '#8764B8', '#D13438',
+            '#FF8C00', '#008a00', '#76608a', '#ff0084', '#007ee5'],
+    animation: true,
+    animationSpeed: 0,
+    fillTextData: true,
+    fillTextColor: '#fff',
+    fillTextAlign: 1.50,
+    fillTextPosition: 'inner',
+    doughnutHoleSize: null,
+    doughnutHoleColor: '#000',
+    offset: 1
+};
+    generatePieGraph('myCanvas2', obj2);
+</script>
+</body></html>

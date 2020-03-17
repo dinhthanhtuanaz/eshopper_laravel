@@ -1,0 +1,339 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị Website - TiTi</title>
+  <link href="./libs/fonts/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tuan-style.css">
+</head>
+<body>
+<div id="wrapper">
+      <header class="header" id="header">
+    <div class="header-brand"><img src="./images/logo-haui-size.png" alt="logo">
+      <h1>Quản Trị Hệ Thống
+      </h1>
+    </div>
+    <div class="dropdown show header-account">
+      <div class="header-account-name" id="dropdownMenuLink" data-toggle="dropdown">
+        <h6><i class="fas fa-user"></i><span>
+            admin        </span><i class="fas fa-caret-down"></i></h6>
+      </div>
+      <div class="dropdown-menu header-account-control" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">
+              <i class="fas fa-user-cog"></i><span>Cập nhật</span></a>
+          <a class="dropdown-item" href="http://localhost:8080/titiv1/admin/dang-xuat">
+                <i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a></div>
+    </div>
+  </header>
+  <!-- end HEADER-->
+  <main class="main" id="main">
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <div class="sidebar-header">
+          <div class="sidebar-avt"><img src="./images/avt.jpg" alt="avatar"></div>
+        <h6>Xin chào admin</h6>
+        </div>
+        <ul class="sidebar-tree list-inline">
+                                    <li class="treeview"><a href="http://localhost:8080/titiv1/admin/thong-ke">
+                            <i class="fas fa-chart-line"></i><span>Thống kê dữ liệu</span></a>
+                      </li>
+                              <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-folder-open"></i><span>Danh mục</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="http://localhost:8080/titiv1/admin/danh-muc">Danh sách</a></li>
+              <li><a href="http://localhost:8080/titiv1/admin/danh-muc/them">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-database"></i><span>Sản phẩm</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="http://localhost:8080/titiv1/admin/san-pham">Danh sách</a></li>
+              <li><a href="http://localhost:8080/titiv1/admin/san-pham/them">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href="http://localhost:8080/titiv1/admin/don-hang"><i class="fas fa-cart-arrow-down"></i><span>Đơn hàng</span></a>
+          </li><li class="treeview"><a href="http://localhost:8080/titiv1/admin/khach-hang"><i class="fas fa-users"></i><span>Khách hàng</span></a>
+          </li>
+
+                              <li class="treeview"><a href="" class="treeview-not-link"><i class="fas fa-user-lock"></i><span>Nhân viên</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+                        <ul class="treeview-menu list-inline">
+                          <li><a href="http://localhost:8080/titiv1/admin/nhan-vien">Danh sách</a></li>
+                          <li><a href="http://localhost:8080/titiv1/admin/nhan-vien/them">Thêm</a></li>
+                        </ul>
+                      </li>
+                
+
+
+
+        </ul>
+      </nav>
+    </aside>
+    <!-- end SIDEBAR-->
+    <section class="block-center" id="block-center">
+      <div class="inner-center" id="inner-center">
+            
+<div id="wrap-content">
+
+    
+<div class="wrap-content_head">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="breadcome-heading">
+                <form role="search" class="sr-input-func" id="search-form" method="POST" action="">
+                    <input type="text" placeholder="Tìm kiếm..." class="search-int form-control" style="background:#fff">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <a href="http://localhost:8080/titiv1/admin/san-pham/them" class="btn btn-primary float-right">Thêm</a>
+        </div>
+    </div>
+</div>
+    <table class="table table-bordered bg-white">
+        <thead>
+            <tr>
+                <th scope="col" class="width-45">#</th>
+                <th scope="col" style="width:200px;">Tên sản phẩm</th>
+                <th scope="col">Giá</th>
+                <th scope="col" style="width:100px;">Hình</th>
+                <th scope="col">Mô tả</th>
+                <th scope="col" style="width:300px;">Thông số chi tiết</th>
+                <th scope="col" style="width:105px;">Danh mục</th>
+                <th scope="col" class="width-110">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+                                <tr>
+                    <th scope="row">1</th>
+                    <td>SP thuộc DM5</td>
+                    <td>1,345,634</td>
+                    <td>
+                        <img src="./images/avt-do-cong-nghe.jpg" alt="" style="width:100px; height:50px;">
+                    </td>
+                    <td>
+                        <p class="row-three">Mô tả</p>
+                    </td>
+                    <td>
+                        <p class="row-three"></p></td>
+                    <td>19</td>
+                    <td>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/21/sua" class="btn-custom-1">
+                            <i class="far fa-edit text-warning fs-24"></i>
+                        </a>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/21/xoa" class="btn-custom-1" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
+                            <i class="far fa-trash-alt fs-24 text-danger"></i>
+                        </a>
+                    </td>
+                    </tr>
+
+                                    <tr>
+                    <th scope="row">2</th>
+                    <td>Hộp túi chống sốc đa năng đựng phụ kiện công nghệ cáp sạc, tai nghe, sạc dự phòng, mỹ phẩm</td>
+                    <td>39,900</td>
+                    <td>
+                        <img src="./images/tui-dung-phu-kien.jpg" alt="" style="width:100px; height:50px;">
+                    </td>
+                    <td>
+                        <p class="row-three">Phù hợp để lưu trữ các phụ kiện công nghệ: cáp sạc, tai nghe, sạc dự phòng, mỹ phẩm ..
+
+Chất liệu vải dày dặn nhiều lớp và thiết kế chuyên dụng để chống sốc
+
+Bên trong túi có tích hợp lớp túi lưới giúp lưu trữ tốt hơn
+
+Chất liệu nhẹ, đường chỉ may chắc chắn tinh xảo, chống thấm nước, chống sốc
+
+Thiết kế tối giản, nhỏ gọn, dễ dàng mang theo mọi nơi
+
+Kích thước bên ngoài túi: 220mm x 150mm</p>
+                    </td>
+                    <td>
+                        <p class="row-three"></p></td>
+                    <td>10</td>
+                    <td>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/20/sua" class="btn-custom-1">
+                            <i class="far fa-edit text-warning fs-24"></i>
+                        </a>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/20/xoa" class="btn-custom-1" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
+                            <i class="far fa-trash-alt fs-24 text-danger"></i>
+                        </a>
+                    </td>
+                    </tr>
+
+                                    <tr>
+                    <th scope="row">3</th>
+                    <td>Máy Ảnh Sony Alpha A6000 + 16-50mm</td>
+                    <td>11,990,000</td>
+                    <td>
+                        <img src="./images/may-anh-sony.jpeg" alt="" style="width:100px; height:50px;">
+                    </td>
+                    <td>
+                        <p class="row-three">Cảm biến: APS HD CMOS 24.3MP
+
+Bộ xử lý hình ảnh: BIONZ X
+
+ISO: 100 - 25600
+
+Hệ thống lấy nét: 25 điểm
+
+Tốc độ lấy nét cực nhanh 0.06 giây
+
+Chụp ảnh liên tục: 11 ảnh/ giây
+
+Chuyển hình nhanh với kêt nối Wifi</p>
+                    </td>
+                    <td>
+                        <p class="row-three"></p></td>
+                    <td>8</td>
+                    <td>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/19/sua" class="btn-custom-1">
+                            <i class="far fa-edit text-warning fs-24"></i>
+                        </a>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/19/xoa" class="btn-custom-1" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
+                            <i class="far fa-trash-alt fs-24 text-danger"></i>
+                        </a>
+                    </td>
+                    </tr>
+
+                                    <tr>
+                    <th scope="row">4</th>
+                    <td>Máy Tính Khoa Học Casio FX-580VN X</td>
+                    <td>565,000</td>
+                    <td>
+                        <img src="./images/may-tinh-casio.jpg" alt="" style="width:100px; height:50px;">
+                    </td>
+                    <td>
+                        <p class="row-three">Tính năng đột phá với 521 tính năng, vượt trội so với 453 tính năng dòng FX570VNP
+
+Màn hình LCD độ phân giải cao, hiển thị đầy đủ phép tính
+
+Chất liệu bề mặt cao cấp, vân nổi 3D hiện đại, trẻ trung
+
+Thiết kế riêng theo yêu cầu của học sinh và giáo viên Việt Nam
+
+Phù hợp với hình thức thi trắc nghiệm hiện nay
+
+Giao diện 2 ngôn ngữ: Anh - Việt
+
+Tốc độ xử lý nhanh gấp 6 lần so với FX570VNPLUS
+
+Là sản phẩm duy nhất có tại Việt Nam và dành riêng cho thị trường Việt Nam
+
+Được bộ GDĐT cho phép mang vào phòng thi theo công văn số 1568/BGDĐT-CNTT ngày 19/04/2018</p>
+                    </td>
+                    <td>
+                        <p class="row-three"></p></td>
+                    <td>7</td>
+                    <td>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/18/sua" class="btn-custom-1">
+                            <i class="far fa-edit text-warning fs-24"></i>
+                        </a>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/18/xoa" class="btn-custom-1" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
+                            <i class="far fa-trash-alt fs-24 text-danger"></i>
+                        </a>
+                    </td>
+                    </tr>
+
+                                    <tr>
+                    <th scope="row">5</th>
+                    <td>Túi Đeo Chéo Nam HARAS</td>
+                    <td>35,000</td>
+                    <td>
+                        <img src="./images/tui-deo-cheo.jpg" alt="" style="width:100px; height:50px;">
+                    </td>
+                    <td>
+                        <p class="row-three">Thiết kế trẻ trung, năng động
+
+Kích thước nhỏ gọn, tiện lợi
+
+Chất liệu vải oxford dày dặn, độ bền cao
+
+Thích hợp mang đi học, chơi thể thao</p>
+                    </td>
+                    <td>
+                        <p class="row-three"></p></td>
+                    <td>6</td>
+                    <td>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/17/sua" class="btn-custom-1">
+                            <i class="far fa-edit text-warning fs-24"></i>
+                        </a>
+                        <a href="http://localhost:8080/titiv1/admin/san-pham/17/xoa" class="btn-custom-1" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
+                            <i class="far fa-trash-alt fs-24 text-danger"></i>
+                        </a>
+                    </td>
+                    </tr>
+
+                        </tbody>
+    </table>
+    <div class="row ">
+        <div class="col-12 pagination-center">
+            <ul class="pagination" role="navigation">
+        
+                    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                <span class="page-link" aria-hidden="true">‹</span>
+            </li>
+        
+        
+                    
+            
+            
+                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/titiv1/admin/san-pham?page=2">2</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/titiv1/admin/san-pham?page=3">3</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/titiv1/admin/san-pham?page=4">4</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/titiv1/admin/san-pham?page=5">5</a></li>
+                                                        
+        
+                    <li class="page-item">
+                <a class="page-link" href="http://localhost:8080/titiv1/admin/san-pham?page=2" rel="next" aria-label="Next »">›</a>
+            </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+      </div>
+    </section>
+    <!-- end CONTENT-->
+  </main>
+  <footer></footer>
+</div>
+
+
+<script src="./libs/jquery/jquery-2.2.4.js"></script>
+<script src="./libs/jquery/popper.min.js"></script>
+<script src="./libs/bootstrap/bootstrap.min.js"></script>
+
+
+<script src="./libs/counter/waypoint.js"></script>
+<script src="./libs/counter/jquery.counterup.min.js"></script>
+
+<script src="./libs/piechart-mater/rpie.js"></script>
+
+<script src="./script.js"></script>
+<script>
+    //back pre page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<script>
+    var obj2 = {
+    values: [
+        12,10,2,2,    ],
+    colors: ['#4CAF50', '#00BCD4', '#E91E63', '#FFC107', '#8e44ad',
+            '#f39c12', '#34495e', '#2D7D9A', '#8764B8', '#D13438',
+            '#FF8C00', '#008a00', '#76608a', '#ff0084', '#007ee5'],
+    animation: true,
+    animationSpeed: 0,
+    fillTextData: true,
+    fillTextColor: '#fff',
+    fillTextAlign: 1.50,
+    fillTextPosition: 'inner',
+    doughnutHoleSize: null,
+    doughnutHoleColor: '#000',
+    offset: 1
+};
+    generatePieGraph('myCanvas2', obj2);
+</script>
+</body></html>
